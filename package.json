@@ -6,6 +6,7 @@
     "scripts": {
         "build": "warngler build",
         "preview": "wrangler preview",
+        "dev": "wrangler dev",
         "publish": "wrangler publish"
     },
     "author": "Rhilip <rhilipruan@gmail.com>",
@@ -13,5 +14,12 @@
     "dependencies": {
         "cheerio": "^1.0.0-rc.3",
         "html2bbcode": "^1.2.6"
+    },
+    "devDependencies": {
+        "eslint": "^7.23.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^4.3.1"
     }
 }

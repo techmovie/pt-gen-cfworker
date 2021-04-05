@@ -29,14 +29,15 @@ API Point：
 
 ## 支持资源链接
 
-| 资源来源站点 | 搜索支持 | 链接格式（Regexp） |
-| :---: | :---: | :------|
-| douban | √ | `/(?:https?:\/\/)?(?:(?:movie\|www)\.)?douban\.com\/(?:subject\|movie)\/(\d+)\/?/` |
-| imdb | √ | `/(?:https?:\/\/)?(?:www\.)?imdb\.com\/title\/(tt\d+)\/?/` |
-| bangumi | √ | `/(?:https?:\/\/)?(?:bgm\.tv\|bangumi\.tv\|chii\.in)\/subject\/(\d+)\/?/` |
-| steam | × | `/(?:https?:\/\/)?(?:store\.)?steam(?:powered\|community)\.com\/app\/(\d+)\/?/` |
-| indienova | × | `/(?:https?:\/\/)?indienova\.com\/game\/(\S+)/` | 
-| epic | × | `/(?:https?:\/\/)?www\.epicgames\.com\/store\/[a-zA-Z-]+\/product\/(\S+)\/\S?/` |
+| 资源来源站点 | 搜索支持 | 链接格式（Regexp）                                                               |
+| :----------: | :------: | :------------------------------------------------------------------------------- |
+| douban_movie |    √     | `/(?:https?:\/\/)?(?:(?:movie|www)\.)douban\.com\/(?:subject|movie)\/(\d+)\/?/,` |
+| douban_book  |    √     | `/(?:https?:\/\/)?(?:(?:book|www)\.)douban\.com\/(?:subject|book)\/(\d+)\/?/`    |
+|     imdb     |    √     | `/(?:https?:\/\/)?(?:www\.)?imdb\.com\/title\/(tt\d+)\/?/`                       |
+|   bangumi    |    √     | `/(?:https?:\/\/)?(?:bgm\.tv\|bangumi\.tv\|chii\.in)\/subject\/(\d+)\/?/`        |
+|    steam     |    ×     | `/(?:https?:\/\/)?(?:store\.)?steam(?:powered\|community)\.com\/app\/(\d+)\/?/`  |
+|  indienova   |    ×     | `/(?:https?:\/\/)?indienova\.com\/game\/(\S+)/`                                  |
+|     epic     |    ×     | `/(?:https?:\/\/)?www\.epicgames\.com\/store\/[a-zA-Z-]+\/product\/(\S+)\/\S?/`  |
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FRhilip%2Fpt-gen-cfworker.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FRhilip%2Fpt-gen-cfworker?ref=badge_large)
