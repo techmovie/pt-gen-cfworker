@@ -101,12 +101,9 @@ async function handle (event) {
             error: 'Miss key of `site` or `sid` , or input unsupported resource `url`.',
           });
         } else {
-          console.log(site);
-          console.log(site === 'douban_movie');
           if (support_site_list.includes(site)) {
             // 进入对应资源站点处理流程
             if (site === 'douban_movie') {
-              console.log(22222);
               response = await gen_douban(sid);
             } else if (site === 'douban_book') {
               response = await gen_douban_book(sid);
@@ -121,7 +118,6 @@ async function handle (event) {
             } else if (site === 'epic') {
               response = await gen_epic(sid);
             } else {
-              console.log(3333333);
               // 没有对应方法的资源站点，（真的会有这种情况吗？
               response = makeJsonResponse({
                 error: 'Miss generate function for `site`: ' + site + '.',
